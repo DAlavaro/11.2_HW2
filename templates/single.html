@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>candidate</title>
+</head>
+<body>
+    <h1><a href="/search/{{item.name}}">{{item.name}}</a></h1>
+    <p>{{item.position}}</p>
+    <img src={{item.picture}} width="200/">
+    {% for item in item.skills %}
+        <p><a href="/skills/{{item.skills}}">{{item.skills}</a></p>
+    {% endfor %}
+    <p>{{item.skills}}</p>
+</body>
+</html>
